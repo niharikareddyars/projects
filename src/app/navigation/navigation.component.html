@@ -1,0 +1,17 @@
+<div class="nav-container">
+  <div class="nav-content">
+    <h1 class="app-title">Online Notebook</h1>
+    <nav class="navigation">
+      <ul>
+        <li *ngFor="let page of pages">
+          <button 
+            [class.active]="currentPage === page"
+            (click)="changePage(page)"
+            class="page-btn">
+            Page {{ page }}
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

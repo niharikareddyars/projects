@@ -1,0 +1,28 @@
+   .centered-list {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  .navigation button {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .navigation button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navigation button.active {
+    color: #ffffff; /* Change text color for active button */
+    background-color: #333333; /* Change background color for active button */
+    border-color: #333333; /* Change border color for active button */
+  }
+  

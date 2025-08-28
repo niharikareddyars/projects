@@ -1,0 +1,24 @@
+<div class="notebook-wrapper">
+  <div class="notebook-container">
+    <div class="page-header">
+      <h2>Page {{currentPage}}</h2>
+      <div class="actions">
+        <button class="action-btn save-btn" (click)="savePageText()">
+          Save Note
+        </button>
+        <button class="action-btn clear-btn" (click)="clearPage()">
+          Clear Note
+        </button>
+      </div>
+    </div>
+    <div class="editor-container">
+      <textarea 
+        [(ngModel)]="currentPageText" 
+        (blur)="savePageText()"
+        placeholder="Start writing your notes here..."
+        spellcheck="true"
+        rows="20">
+      </textarea>
+    </div>
+  </div>
+</div>
